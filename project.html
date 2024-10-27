@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project</title>
+    <style>
+        .navbar{
+            background-color: #FCAF02;
+            width: 1728px;
+            height: 86px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            z-index: 10;
+        }
+        #logounderline{
+            text-decoration: underline;
+        }
+        .Logo{
+            position: absolute;
+            width: 127px;
+            height: 39px;
+            margin-top: 24px;
+            margin-left: 58px;
+            float: left;
+        }
+        #logo, #logounderline{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39.01px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400px;
+            font-size: 28px;
+            line-height: 34.13px;
+            
+            
+        }
+        .navlinks {
+            display: flex;
+            margin-left: auto;
+            margin-right: 58px;
+            margin-top: 26px;
+            gap: 75px;
+        }
+        body{
+            width: 1728px;
+            background-color: black;
+        }
+        #heading{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            width: 736px;
+            height: 78px;
+            top: 174px;
+            margin-left: 58px;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78.02px;
+        }
+        #para{
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            width: 917px;
+            height: 238px;
+            top: 285px;
+            margin-left: 63px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 34.13px;
+        }
+        #button{
+            width: 323px;
+            height: 66px;
+            top: 630px;
+            margin-left: 63px;
+            gap: 0px;
+            border-radius: 500px 500px 500px 500px;
+            opacity: 0px;
+            background-color: #FCAF02;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39.01px;
+        }
+        #jeff{
+            width: 697px;
+            height: 482px;
+            opacity: 0px;
+            top: 13px;
+            transform: scaleX(-1);
+        }
+        .imagej{
+            width: 697px;
+            height: 482px;
+            top: 40px;
+            position: relative;
+        }
+        .intro{
+            display: flex;
+        }
+        .formcontact{
+            margin-left: 63px;
+        }
+        #contactus{
+            width: 369px;
+            height: 78px;
+            top: 771px;
+            gap: 0px;
+            opacity: 0px;
+            color: #FCAF02;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78.02px;
+            text-align: left;
+        }
+        .fne{
+            width: 1570px;
+            height: 82px;
+            top: 913px;
+            left: 63px;
+            gap: 0px;
+            border-radius: 100px 100px 100px 100px;
+            opacity: 0px;
+            color: #FCAF02;
+            border: 2px solid #FCAF02;
+            background-color: black;
+        }
+        input::placeholder {
+            color: #FFC107;         
+            font-size: 25px;
+            padding-left: 70px; 
+            font-family: 'Montserrat', sans-serif;        
+        }
+        .fmc{
+            border-radius: 100px 100px 100px 100px;
+            opacity: 0px;
+            color: #FCAF02;
+            border: 2px solid #FCAF02;
+            background-color: black;
+            width: 730px;
+            height: 82px;
+            top: 1177px; 
+            margin-right: 93px;
+        }
+        input:focus {
+            outline: none;
+        }
+        .submit-button{
+            width: 325px;
+            height: 82px;
+            top: 1326px;
+            margin-left: 622px;
+            gap: 0px;
+            border-radius: 100px 100px 100px 100px;
+            border: 2px 0px 0px 0px;
+            opacity: 0px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39.01px;
+            text-align: center;
+            background-color: #FCAF02;
+            border: 2px solid #FCAF02;
+        }
+        table{
+            width: 1582px;
+            height: 755px;
+            top: 1524px;
+            margin-left: 75px;
+            gap: 0px;
+            opacity: 0px;
+            border-collapse: collapse;
+        }
+        tfoot{
+            background-color: #FCAF02;
+            width: 1582px;
+            height: 91px;
+            top: 2188px;
+            left: 75px;
+            gap: 0px;
+            opacity: 0px;
+            
+
+        }
+        tfoot td{
+            border: 2px solid black;
+            font-family: 'Montserrat', sans-serif;
+            font-family: Montserrat;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34.13px;
+            text-align: center;
+            
+
+        }
+        tbody td{
+            border: 2px solid #FCAF02;
+            font-family: 'Montserrat', sans-serif;
+            color: #FCAF02;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34.13px;
+            text-align: center;
+
+        }
+        thead{
+            border: 2px solid #FCAF02;
+            width: 1582px;
+            height: 91px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        th{
+            color: #FCAF02;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 34.13px;
+            text-align: center;
+            border: 2px solid #FCAF02;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="Logo">
+        <header id="logo">Start<span id="logounderline">up</span></header>
+        </div>
+        <div class="navlinks">
+            <a href="#home">Home</a>
+            <a href="#about">About US</a>
+            <a href="#contact">Contact US</a>
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+    <div class="intro">
+    <section class="intro-section">
+        <h1 id="heading">Startup Landing Page</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><br>
+        <button id="button">Login</button>
+    </section>
+    <div class="imagej">
+        <img id="jeff"src="https://s3-alpha-sig.figma.com/img/1bfe/0656/5ce73b370dc5f157ffb73c5df166e15b?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jElwUnd0SE998mfjHGWsF8DPd-IZjpah1~HvP~3XBQhP2WjEzqpzV52-YVa4iSNdaRdx2OVUs8jR9T-DK4mYuoM-mmg0-r5qNhDq7qKUTY6Vk97Wy~xTzTWMoAmLF3lzsrU0k2aMDAyXz5rfQeS1OmNDQKpWMgli2r1m031ncpAOev1UmO9zeypOTJTy2pGaJ~j6d6suWe8H7c7Cn8jNH~nqCE7wIHrdsHI7BNpyhC6nU48N6VlO1zed8gqIPSRhVNC7XVcKbRdK5udNauapE68e-JBAcMZSoh479fQ9e0VtQRNlqIKbgHbzoFQD0RR5YO16hJfcjwuM~2Xp5qQGyQ__" alt="Jeff bezos"></div>
+    </div>
+    <br><br><br>
+    <div class="formcontact">
+        <h1 id="contactus">Contact Us</h1><br><br><br>
+        <form>
+            <input class="fne" type="text" placeholder="Name"><br><br><br>
+            <input class="fne" type="email" placeholder="Email"><br><br><br>
+            <input class="fmc" type="number" placeholder="Mobile Number">
+            <input class="fmc" type="text" placeholder="city"><br><br><br>
+            <button type="submit" class="submit-button">Submit Form</button>
+        </form>
+    </div>
+    <br><br><br><br><br><br>
+    <div>
+        <table>
+            <thead>
+                <th>SNO.</th>
+                <th>Startup Name</th>
+                <th>Startup Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>WowIndia</td>
+                    <td>A startup with WOW Ideas.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Loreum Ipsum</td>
+                    <td>Loreum Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Loreum Ipsum</td>
+                    <td>Loreum Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Loreum Ipsum</td>
+                    <td>Loreum Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Loreum Ipsum</td>
+                    <td>Loreum Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Loreum Ipsum</td>
+                    <td>Loreum Ipsum Text</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>00.</td>
+                    <td>Final Footer</td>
+                    <td>Loreum Ipsum Text</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+</html>
